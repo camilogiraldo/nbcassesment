@@ -2,7 +2,7 @@ import { TileComponent } from './TileComponent.js'
 
 export const Gallery = ( items ) => {
     const tiles = items.map(item =>TileComponent(item)).join('');
-    console.log(items)
+
     return `
         <div class="gallery">
             <h1 class="gallery__header">RECENTLY ADDED</h1>
