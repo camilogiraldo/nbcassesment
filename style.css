@@ -1,0 +1,85 @@
+/**
+ * Global styles
+ */
+html, body {
+  background: #f1f1f1;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/**
+ * The gallery container.
+ *
+ * It wraps all the rows and tiles.
+ */
+.gallery {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.gallery__header{
+    font-size: 30px;
+    font-weight: 200;
+    margin: 30px 0 20px 12.5px;
+    letter-spacing: 1px;
+}
+
+/**
+ *  The inner wrapper of all the tiles
+ *
+ */
+.gallery__tiles {
+    padding: 0 7.5px;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/**
+ * You'll need to implement this for each tile
+ */
+.tile {
+    background: white;
+    margin: 10px 5px;
+}
+
+.tile__content {
+    height: 290px;
+}
+
+/**
+ * The tile badge (new|premier|expiring)
+ */
+.tile__badge {
+    box-sizing: border-box;
+    font-size: 16px;
+    z-index: 20;
+    position: absolute;
+    letter-spacing: 0.6px;
+    line-height: 1.8;
+    background-color: #ffffff;
+    color: #2e2e2e;
+    text-align: center;
+    padding: 2px 15px 0;
+}
+
+.tile__metadata {
+    margin: 10px;
+}
+
+.tile__metadata__title {
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+.tile__metadata__info {
+    letter-spacing: 0.3px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #2e2e2e;
+}
